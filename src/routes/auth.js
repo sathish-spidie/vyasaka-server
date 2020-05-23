@@ -6,6 +6,7 @@ import jwt from "jsonwebtoken";
 const router = express.Router();
 const app = express();
 
+// login route
 router.post("/", async (req, res) => {
   const { email, password } = req.body.credentials;
   try {
